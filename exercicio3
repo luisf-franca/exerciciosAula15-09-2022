@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+  public static void main(String[] args) {
+    Integer numeroA;
+
+    numeroA = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero: "));
+    if ((numeroA % 10 == 0) || (numeroA % 5 == 0) || (numeroA % 2 == 0)) {
+      JOptionPane.showMessageDialog(null, numeroA + " é um numero divisivel por 10 ou por 5 ou por 2. ");
+    } else {
+      JOptionPane.showMessageDialog(null, numeroA + " não é um numero divisivel por 10 ou por 5 ou por 2. ");
+    }
+  }
+}
