@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Integer numero;
+
+    JOptionPane.showMessageDialog(null, "Vamos descobrir se o número por 3 e 7 ao mesmo tempo!");
+    numero = Integer.parseInt(JOptionPane.showInputDialog("Por favor, insira um número inteiro"));
+
+    if (numero % 7 == 0 && numero % 3 == 0) {
+      JOptionPane.showMessageDialog(null, "Este número é divisível por 7 e 3");
+    } else {
+      JOptionPane.showMessageDialog(null, "Este número não é divisível por 7 e 3");
+    }
+  }
+}
